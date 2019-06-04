@@ -4,18 +4,17 @@ function addExcitement (theWordArray) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
-        /*
-            If the current value of `i` divided by 3 has no
-            remainder, add an exclamation point to the end of
-            the word and then concatenate it to `buildMeUp`.
-
-            Otherwise, just concatenate the word itself.
-         */
-
-
-        // Print buildMeUp to the console
-    }
-
+        // console.log('i',i,'i+1',i+1,'i % 3',i%3,'i+1%3',(i + 1) %3);
+        if ([i + 1] % 3 == 0) { //add 1 to i to start ! at third word
+            buildMeUp += theWordArray[i] + "!"; 
+        } else {
+        buildMeUp += theWordArray[i] + " ";
+        }
+        console.log(buildMeUp);
+    
+    } 
 }
+
+
 
 addExcitement(sentence)
